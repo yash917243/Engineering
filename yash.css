@@ -1,0 +1,373 @@
+*{
+    padding:0 ;
+    margin: 0;
+
+}
+body{
+    background-image: url(20.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.subject-list
+{
+    background: rgb(0, 100, 0);
+    text-align: center;
+}
+.subject-list ul
+{
+    display:inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.subject-list ul li
+{
+    width:120px;
+    margin:15px;
+    padding:15px;
+}
+.subject-list ul li a
+{
+    text-decoration:none ;
+    color: #fff;
+}
+.active, .subject-list ul li:hover
+{
+    background: #2bab0d;
+    border-radius: 3px;
+}
+.subject-list.fa
+{
+    margin-right: 8px;
+}
+.sub-menu-1
+{
+    display:none;
+
+}
+.subject-list ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.subject-list ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.subject-list ul li:hover .sub-menu-1 ul li
+{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;  
+}
+.subject-list ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.subject-list ul li:hover .sub-menu-1 ul li a:hover
+{
+    color:#b2ff00 ;
+}
+.sub-1
+{
+    display: none;
+}
+.subject-list ul li:hover .sub-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.subject-list ul li:hover .sub-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.subject-list ul li:hover .sub-1 ul li
+{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;  
+}
+.subject-list ul li:hover .sub-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.subject-list ul li:hover .sub-1 ul li a:hover
+{
+    color:#b2ff00 ;
+}
+.fa-angle.right
+{
+   float: right;
+}
+
+.sub-2
+{
+    display: none;
+}
+.subject-list ul li:hover .sub-2
+{
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.subject-list ul li:hover .sub-2 ul
+{
+    display: block;
+    margin: 10px;
+}
+.subject-list ul li:hover .sub-2 ul li
+{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;  
+}
+.subject-list ul li:hover .sub-2 ul li:last-child
+{
+    border-bottom: none;
+}
+.subject-list ul li:hover .sub-2 ul li a:hover
+{
+    color:#b2ff00 ;
+}
+
+.sub-3
+{
+    display: none;
+}
+.hover-me:hover .sub-3
+{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgba(#b2ff00);
+}
+.sub-6 {
+    display: none;
+}
+
+.subject-list ul li:hover .sub-6 {
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.subject-list ul li:hover .sub-6 ul {
+    display: block;
+    margin: 10px;
+}
+
+.subject-list ul li:hover .sub-6 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.subject-list ul li:hover .sub-6 ul li:last-child {
+    border-bottom: none;
+}
+
+.subject-list ul li:hover .sub-6 ul li a:hover {
+    color: #b2ff00;
+}
+
+.fa-angle.right .sub-6 {
+    float: right;
+}
+.stand{
+    position: absolute;
+    width: 4%;
+    height: 55%;
+    background: linear-gradient(99deg,#ffffff,#6c6666);
+    left: 630px;
+    bottom: 0%;
+    box-shadow: inset -10px -10px 5px grey;
+    box-shadow: inset 10px 10px 5px grey;
+    border-bottom: 3px solid rgba(0,250,0,0.2);
+
+}
+.fan{
+    position:absolute;
+    width:80px ;
+    height: 80px;
+    background: radial-gradient(#20BDFF,#5433FF);
+    margin-left: 618px;
+    margin-top: 20%;
+    border: 1px solid black;
+    border-radius: 50%;
+    animation: rotate 15s linear infinite;
+   
+}
+@keyframes rotate{
+ from{
+
+
+}
+to{
+    transform: rotateZ(360deg);
+   }
+}
+.fan span{
+    width:50%;
+    height:300px;
+    background:linear-gradient(90deg,skyblue,grey);
+    border-radius:50% 50% 0px 0px ;
+}
+.fan span:nth-child(1){
+    position: absolute;
+    left: -120px;
+    top:-30px;
+    transform:rotateZ(240deg);
+}
+.fan span:nth-child(2) {
+    position: absolute;
+    left: 160px;
+    top: -30px;
+    transform: rotateZ(120deg);
+}
+.fan span:nth-child(3) {
+    position: absolute;
+    left: 20px;
+    top: -270px;
+    transform: rotateZ(360deg);
+}
+.circle{
+    width:50px;
+    height:50px;
+    background:radial-gradient(grey,white);
+    position: absolute;
+    left: 634px;
+    top: 288px;
+    border-radius: 50%;
+    display: fixed;
+}
+.stand-1 {
+    position: absolute;
+    width: 4%;
+    height: 40%;
+    background: linear-gradient(99deg, #ffffff, #6c6666);
+    left: 210px;
+    bottom: 0%;
+    box-shadow: inset -10px -10px 5px grey;
+    box-shadow: inset 10px 10px 5px grey;
+    border-bottom: 3px solid rgba(0, 250, 0, 0.2);
+}
+
+
+.fan-1 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(#20BDFF, #5433FF);
+    margin-left: 200px;
+    margin-top: 26%;
+    border: 1px solid black;
+    border-radius: 50%;
+    animation: rotate 15s linear infinite;
+}
+
+
+@keyframes rotate {
+    from {}
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.fan-1 span {
+    width: 50%;
+    height: 270px;
+    background: linear-gradient(90deg, skyblue, grey);
+    border-radius: 50% 50% 0px 0px;
+}
+
+.fan-1 span:nth-child(1) {
+    position: absolute;
+    left: -110px;
+    top: -14px;
+    transform: rotateZ(240deg);
+}
+
+.fan-1 span:nth-child(2) {
+    position: absolute;
+    left: 155px;
+    top: -20px;
+    transform: rotateZ(120deg);
+}
+
+.fan-1 span:nth-child(3) {
+    position: absolute;
+    left: 15px;
+    top: -250px;
+    transform: rotateZ(360deg);
+}
+
+.circle-1 {
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(grey, white);
+    position: absolute;
+    left:210px; 
+    top: 355px;
+    border-radius: 50%; 
+   
+}
+.sub-8 {
+    display: none;
+}
+
+.subject-list ul li:hover .sub-8 {
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.subject-list ul li:hover .sub-8 ul {
+    display: block;
+    margin: 10px;
+}
+
+.subject-list ul li:hover .sub-8 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.subject-list ul li:hover .sub-8 ul li:last-child {
+    border-bottom: none;
+}
+
+.subject-list ul li:hover .sub-8 ul li a:hover {
+    color: #b2ff00;
+}
